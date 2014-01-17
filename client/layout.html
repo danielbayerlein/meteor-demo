@@ -1,0 +1,45 @@
+<head>
+  <title>GitHub</title>
+</head>
+
+<body>
+  <div class="container">
+    {{> header}}
+    {{> navigation}}
+    {{renderRouter}}
+    {{> footer}}
+  </div>
+</body>
+
+<template name="header">
+  <header class="clearfix">
+    <div class="pull-left">
+      {{{image_tag 'images/github.png' 'GitHub' 250 103}}}
+    </div>
+    <div id="search" class="pull-right input-group">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button">@</button>
+      </span>
+      <input type="text" class="form-control" placeholder="Username">
+    </div>
+  </header>
+</template>
+
+<template name="navigation">
+  <nav>
+    <ul class="nav nav-pills">
+      <li class="{{nav_class 'index'}}">
+        <a href="{{pathFor 'index'}}">Home</a>
+      </li>
+      <li class="{{nav_class 'example'}}">
+        <a href="{{pathFor 'example'}}">Example</a>
+      </li>
+    </ul>
+  </nav>
+</template>
+
+<template name="footer">
+  <footer class="text-center">
+    <p>© Daniel Bayerlein</p>
+  </footer>
+</template>

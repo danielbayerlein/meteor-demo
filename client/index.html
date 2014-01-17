@@ -1,0 +1,57 @@
+<template name="index">
+    <section class="panel panel-success">
+    <div class="panel-heading">
+      <h2>Meine Repositories</h2>
+    </div>
+    <div class="panel-body">
+      <ul>
+      {{#each repos}}
+        <li>
+          <strong>{{{link_tag name url}}}</strong>
+          -
+          <i>{{description}}</i>
+        </li>
+      {{/each}}
+      </ul>
+    </div>
+  </section>
+  <section class="panel panel-success">
+    <div class="panel-heading">
+      <h2>Meine Forks</h2>
+    </div>
+    <div class="panel-body">
+      <ul>
+      {{#each forks}}
+        <li>
+          <strong>{{{link_tag name url}}}</strong>
+          -
+          <i>{{description}}</i>
+        </li>
+      {{/each}}
+      </ul>
+    </div>
+  </section>
+  <section class="media">
+    {{#with user}}
+      <a class="pull-left" href="{{{url}}}">
+        {{{gravatar_tag gravatar_id 100}}}
+      </a>
+    {{/with}}
+    <ul class="list-unstyled pull-left">
+    {{#with user}}
+      <li>
+        <strong>{{{link_tag name url}}}</strong>
+      </li>
+      {{#if blog}}
+        <li>{{{link_tag blog blog}}}</li>
+      {{/if}}
+      {{#if company}}
+        <li>{{company}}</li>
+      {{/if}}
+      <li>Followers: {{followers}}</li>
+      <li>Following: {{following}}</li>
+      <li>{{location}}</li>
+    {{/with}}
+    </ul>
+  </section>
+</template>
