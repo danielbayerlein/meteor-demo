@@ -2,7 +2,7 @@
 
 Demo [Meteor](https://www.meteor.com/) app for
 [@Nix-wie-weg](https://github.com/Nix-wie-weg/) with
-[CoffeeScript](http://coffeescript.org/) and [Sass](http://sass-lang.com/),
+[CoffeeScript](http://coffeescript.org/), [Sass](http://sass-lang.com/) and
 [Bootstrap](http://getbootstrap.com/).
 
 ## Installation
