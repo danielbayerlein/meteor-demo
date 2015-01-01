@@ -46,4 +46,4 @@ $ mrt
 
 ## Copyright
 
-Copyright (c) 2014 Daniel Bayerlein. See [LICENSE](./LICENSE.md) for details.
+Copyright (c) 2015 Daniel Bayerlein. See [LICENSE](./LICENSE.md) for details.
